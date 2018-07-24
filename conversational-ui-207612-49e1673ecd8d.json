@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "conversational-ui-207612",
+  "private_key_id": "49e1673ecd8d235201293fcbe68b4ca2e38ddef2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCLOaScOjZlQOmo\neq7DW1jsDMGXnhq2OXrPTpE/j0+U7FybqTcTKFf7AbFtWuRnpfPY2F5RZZwidL8A\nnmPiJ/JOnPqMIpao3cV4gJxPALemTTUARAEL4EiUxB4j3Z719MPlFDVvd1v1XxLl\nY37WWnm3TsHmExwCGy95Vjq5yswWSvTGG/xNVUak3EaO6AWj6NFdyr6Sq7q7en+T\nhyihl5v79H9GibHJq4nsAmGEUpQ4PNEh7p0czAFuQPNrOXjmkmXY6cIp1U3Dvls4\nMjjzVu/bMtWcsJnnQO9EMRAGBWFC94lI3tnqBRsu41kqzAlKiGuSlxv2amC2bEsB\nqE1khT5bAgMBAAECggEABmP2HnunjTHpEmQrNb6xerLtMeiTwPiAyWze9Y6+RY+B\n2Afw22QXLGd7/ZErTxH1eucXkTSQ8Z3v5Hc2DiaXlIHXwutAL25v3COfHnCMfXQp\nciKCSnQYMMfoZZdhxAK2ToNac+GD1Y6bH0StXj5skXw/zIU6XGMOD0uPdNa4/m7k\nrsrw6T6+HzyRWUdbIIxYrZ0iDhtherWyDlExwZnZhTJF85gkfk/z+f0vvo1UW/j8\nFtj/myKZu9tgJubIap182CrMfl7OozVscEBdNDm9dDLder+dhglqt7JcfAIHv5NZ\nShca6isIABdNM43HtzW4AoGZnRf6cyOSeIVL7mDRZQKBgQDATyFcmxfIuTUGbtpY\nyRybyJG/4Zmq4ej/93E2aG78ytmX0ww9g1zjudlf8KTLKfq9szx99Yxkqls/CqP/\nrMVRSjMr+vGoEX9fMk+w3fmKaq9ZTk32pyBxZjgYQL36DTb13lZ1bXw5Q2ndJGEM\nSBrK6Mv8zbh8ILRHM2BZcCbFjwKBgQC5Vc6jJCZepb2Gkvc+p/rljFTWTgDkdFp4\nyUvESSm3xKHZPHpeb4slZkVlZR84IVWLdEbTnT0SCfgdOjHDmWDggS8eljSXqtZE\nvdz2EdogNupJk2/u1hEjNb+JhLMevKTxh5NbJQMhgjwdj3KGdrYHyY4twGi+jHDc\nS+kyQzHMdQKBgQCvqxkUmPAfAV/4omZ+WCfz/kF1gEV5HahTudsHElrgPQSLddRm\nlIrT0z9ILnC6zXwosYP+o8E9a4iyi6vHsDEG0rrv3+nD10f8096L+BktYcsPz0HU\noFI4hGGVdf6UXmHoMtPTrNGfFX+s7MBiEbO3yvQb2Gg/qzhDGiFXUeV47QKBgQCi\nPIvzYZy484sRt6r5TSCjOpG1O3kqgvQDkepiO81qEZXATWGtMyVyKrGKzddjUkLJ\nHZM2gQlJtjJcm2memLAmNs+hjckiDykb6bv4J65yzr+OgqLURs2frdgqMGCAApC8\n4XpLqf2woomvMrgFHvu/m197i1flnZjaLxVGq213VQKBgQChhG6PBGkmt8PJRwjv\nJeXHA/t8jx8zCPz1J3hKdNnBEtVgy/j9jWhq/hcokuXdkcyoRK4Qdvgk0YezkLu3\ntwfc/uv/qn3VN+eifJ6kV6Epsj7KyrWPtnw0Cbajh5pMDUdXvJ5TNp8t9Ylc3GyQ\nc7RWTTqdwV4j0JbZiN/8EVgXSQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dianabot-service-account@conversational-ui-207612.iam.gserviceaccount.com",
+  "client_id": "107543060253490791978",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dianabot-service-account%40conversational-ui-207612.iam.gserviceaccount.com"
+}
