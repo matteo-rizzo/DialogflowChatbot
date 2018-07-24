@@ -1,5 +1,7 @@
 # Chatbot
 
+[![Build Status](https://travis-ci.com/MatteoRizzo96/DialogflowChatbot.svg?token=aob17sYb8dGQVTrvvHqE&branch=master)](https://travis-ci.com/MatteoRizzo96/DialogflowChatbot)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
