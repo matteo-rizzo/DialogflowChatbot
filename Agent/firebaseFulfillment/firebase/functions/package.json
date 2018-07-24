@@ -1,0 +1,24 @@
+{
+  "name": "dialogflowFirebaseFulfillment",
+  "description": "This is the fulfillment for the DianaAgent Dialogflow agent using Cloud Functions for Firebase",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "firebase serve --only dialogflowFirebaseFulfillment",
+    "shell": "firebase dialogflowFirebaseFulfillment:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only dialogflowFirebaseFulfillment",
+    "logs": "firebase dialogflowFirebaseFulfillment:log"
+  },
+  "dependencies": {
+    "actions-on-google": "2.0.0-alpha.4",
+    "commercecloud-ocapi-client": "^0.1.4",
+    "dialogflow": "^0.1.0",
+    "dialogflow-fulfillment": "0.3.0-beta.3",
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3",
+    "install": "^0.12.1",
+    "npm": "^6.1.0",
+    "ocapi-client": "^0.2.2"
+  },
+  "private": true
+}
