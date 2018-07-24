@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "dist/chatbot",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/join",
+        "function": "app"
+      },
+      {
+        "source": "/message",
+        "function": "app"
+      }
+    ]
+  },
+  "functions": {
+    "predeploy": [],
+    "source": "functions"
+  }
+}
