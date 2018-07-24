@@ -17,7 +17,9 @@ import { Component, OnInit } from '@angular/core';
          this._createForm();
       }
 
-      // Create the reactive form here
+      /**
+       * create our reactive form here
+       */
       private _createForm() {
         this.detailsForm = this._fb.group({
           displayName: ['', Validators.required],
@@ -25,7 +27,9 @@ import { Component, OnInit } from '@angular/core';
         });
       }
 
-      // Join the chat
+      /**
+       * Join the fun
+       */
       onSubmit() {
         const param = this.detailsForm.value;
         this._chatService.join(param)

@@ -1,0 +1,107 @@
+<!-- src/app/chat/chat.component.html -->
+
+<div class="chats">
+  <div class="chatbox">
+    <div *ngFor="let chat of chats">
+
+      <!-- Query -->
+      <div class="message sent" *ngIf="chat.userType!=='joined' && chat.isMe">
+        <strong>{{chat.displayName}}</strong> <br>
+        {{chat.message}}
+        <span class="metadata">
+          <span class="time">{{chat.createdAt | date: 'HH:mm aaa'}}</span>
+        </span>
+      </div>
+      
+      <!-- Response -->
+      <div class="message received"  *ngIf="chat.userType!=='joined' && !chat.isMe">
+        <strong>{{chat.displayName}}</strong> <br>
+        
+        <!-- Response type [text, card, carousel, quick-reply] -->
+        <div [ngSwitch]="chat.messageType">
+
+          <!-- Text -->
+          <div *ngSwitchCase="'text'">
+            <p align="center">
+              <em>I'm a TEXT message</em><br>
+              
+              {{chat.message}}
+            </p>
+          </div>
+          
+          <!-- Card -->
+          <div *ngSwitchCase="'card'">
+            <p align="center">
+              <em>I'm a CARD message</em><br>
+
+              {{chat.message.title}} <br>
+              <img src="{{chat.message.imageUrl}}"/>
+              {{chat.message.text}}
+              <a href="{{chat.message.buttonUrl}}">{{chat.message.buttonText}}</a>
+            </p>
+          </div>
+          
+          <!-- Quick reply -->
+          <div *ngSwitchCase="'quickReplies'">
+              <em>I'm a QUICK REPLY message</em><br>
+
+              <div class="flex-row text-center p-3">
+                <div class="col-xs-12">
+                  <div *ngFor="let suggestion of chat.message">
+                    <button class="btn m-1" (click)="sendMessage(suggestion.replies)">{{suggestion.replies}}</button>
+                  </div> 
+                </div>
+              </div>
+          </div>
+
+          <!-- Carousel -->
+          <div *ngSwitchCase="'carousel'">
+            <em>I'm a CAROUSEL message</em><br>
+            
+            <div class="flex-row text-center p-3">
+              <div class="col-xs-12">
+                <div *ngFor="let card of chat.message">
+                  <p align="center">
+                    <span>I'm a CARD message</span><br>
+                    {{card.title}} <br>
+                    <img src="{{card.imageUrl}}"/>
+                    {{card.text}}
+                    <a href="{{chat.buttonUrl}}">{{card.buttonText}}</a>
+                  </p>
+                  <button class="btn m-1" (click)="sendMessage(card.title)">Approfondisci</button>
+                </div> 
+              </div>
+            </div>
+          </div>
+          
+          <!-- Default -->
+          <div *ngSwitchDefault>
+            <p align="center">
+              <em class="rounded">I'm a DEFAULT TEXT message</em>
+            </p>
+          </div>
+        
+        </div>
+
+        <span class="metadata">
+          <span class="time">{{chat.createdAt | date: 'HH:mm aaa'}}</span>
+        </span>
+      </div>
+
+      <!-- Join message -->
+      <p align="center" class="joined"  *ngIf="chat.userType==='joined'">
+      <span class="rounded">{{chat.displayName}} just joined, welcome!</span>
+      </p>
+
+    </div>
+  </div>
+  
+  <!-- Input text -->
+  <div class="d-flex flex-row">
+    <input [(ngModel)]="message" type="text" class="form-control" placeholder="Your message here...">
+    <button [disabled]="!message || sending" (click)="sendMessage(message)" class="btn"> {{sending ? 'Sending' : 'Send'}}</button>
+  </div>
+
+  <!-- Input audio -->
+  <app-record-rtc></app-record-rtc>
+</div>

@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import * as Pusher from 'pusher-js';
-import { env } from 'process';
-import { environment } from '../../environments/environment';
 
 // This is here to discourage the instantiating of Pusher any where its
 // needed, better to reference it from one place
@@ -11,7 +9,7 @@ export class PusherService {
 
   constructor() {
     // Needs Pusher API key and cluster
-    this._pusher = new Pusher(environment.pusher.key, {
+    this._pusher = new Pusher('3de599a26e86c747bb15', {
       cluster: 'eu',
       encrypted: true
     });

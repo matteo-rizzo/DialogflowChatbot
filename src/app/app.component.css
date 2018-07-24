@@ -1,0 +1,10 @@
+/* src/app/app.component.css */
+
+@import url('../styles.css'); 
+
+.box-shadow { box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); }
+
+nav {
+    color: white;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
