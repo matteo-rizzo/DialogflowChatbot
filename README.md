@@ -42,3 +42,30 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Deployment
+
+The app may be deployed as a Node app on Firebase hosting. To deploy it in this way, please comply with the following instructions (in the root directory):
+```
+> firebase init hosting
+> firebase deploy --only hosting
+```
+After the execution of the `firebase init hosting` command, a `firebase.json` will be created. Make sure it contains the proper rewrites for your backend, you will find further information about this in the [official Firebase docs](https://firebase.google.com/docs/hosting/url-redirects-rewrites#section-rewrites).
+ 
+## Built With
+
+* [Dialogflow V2](https://dialogflow.com/) - NLU module and bot development framework
+* [Pusher](https://pusher.com/) - Web socket manager
+* [Angular](https://angular.io/) - Web app framework
+
+## Authors
+
+Matteo Rizzo
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+This project is inspired by a [Pusher tutorial](https://pusher.com/tutorials/group-chat-angular-dialogflow).
