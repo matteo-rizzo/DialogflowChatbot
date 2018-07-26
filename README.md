@@ -39,9 +39,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## ❓ Further help
+## 🌀 Continuous integration
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The project integrates a CI flow built with [CircleCI](https://circleci.com/) that runs the test for the bot and the Firebase fulfillment at every commit.
 
 ## 🚀 Deployment
 
@@ -57,6 +57,10 @@ After the execution of the `firebase init hosting` command, a `firebase.json` wi
 * [Dialogflow V2](https://dialogflow.com/) - NLU module and bot development framework
 * [Pusher](https://pusher.com/) - Web socket manager
 * [Angular](https://angular.io/) - Web app framework
+
+## ❓ Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## 😎 Authors
 
