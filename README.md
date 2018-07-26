@@ -41,7 +41,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## 🌀 Continuous integration
 
-The project integrates a CI flow built with [CircleCI](https://circleci.com/) that runs the test for the bot and the Firebase fulfillment at every commit.
+The project integrates a CI flow built with [Travis CI](https://travis-ci.com/) that checks the status of the build at every commit.
 
 ## 🚀 Deployment
 
