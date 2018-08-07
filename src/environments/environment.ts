@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  url: 'http://localhost:5000',
+  url: 'http://localhost:2000',
 
   dialogflow: {
     DianaAgent: '7aff5896b06c47059d35bb02f1119e4c'

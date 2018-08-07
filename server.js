@@ -78,6 +78,6 @@ app.post('/join', (req, res) => {
 })
 
 // LISTEN
-app.listen(process.env.PORT || 5000, () => console.log('Listening at 5000...'))
+app.listen(process.env.PORT || 2000, () => console.log('Listening at 2000...'))
 
 exports.app = functions.https.onRequest(app);
