@@ -74,6 +74,24 @@ app.post('/join', (req, res) => {
 
   // Trigger this update to our pushers listeners
   pusher.trigger('chat-group', 'chat', chat);
+
+  // Build a Dialogflow sender
+  const sender = new DialogFlow();
+
+  // Initialize the bot
+  sender.sendTextMessageToDialogFlow('ciao').then((response) => {
+
+    console.log('Response returned successfully!');
+    
+    // Trigger the bot response through Pusher in batch mode, which lets you handle multiple sending
+    pusher.triggerBatch(response);
+      
+    // Send the bot response back to the chat
+    res.send(chat);
+  }).catch((err) => {
+    console.log(err);
+  });
+
   res.send(chat);
 })
 

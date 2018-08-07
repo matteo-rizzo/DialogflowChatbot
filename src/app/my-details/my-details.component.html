@@ -1,18 +1,22 @@
 <!-- src/app/my-details/my-details.component.html -->
 
-<h4 class="pb-3 mb-0">MY DETAILS</h4>
+<div class="p-5 bg-white rounded shadow-lg">
 
-<form [formGroup]="detailsForm" (ngSubmit)="onSubmit()" novalidate>
-  <div class="form-group">
-    <label for="name">Display Name</label>
-    <input formControlName="displayName" type="text" class="form-control" id="name" placeholder="Your name here">
-     <small *ngIf="detailsForm.get('displayName').hasError('required')" class="form-text text-danger">Display name is required.</small>
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input formControlName="email" type="email" class="form-control" id="email" placeholder="youemail@here.com">
-    <small *ngIf="detailsForm.get('email').hasError('required')" class="form-text text-danger">Email is required.</small>
-    <small *ngIf="detailsForm.get('email').hasError('email')" class="form-text text-danger">Email is invalid.</small>
-  </div>
-  <button type="submit" [disabled]="loader || detailsForm.invalid" class="btn joining">{{loader?'Joining':'Join Group'}}</button>
-</form>
+  <h4 class="pb-3 mb-0">MY DETAILS</h4>
+  
+  <form [formGroup]="detailsForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group">
+      <label for="name">Display Name</label>
+      <input formControlName="displayName" type="text" class="form-control" id="name" placeholder="Your name here">
+       <small *ngIf="detailsForm.get('displayName').hasError('required')" class="form-text text-danger">Display name is required.</small>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input formControlName="email" type="email" class="form-control" id="email" placeholder="youemail@here.com">
+      <small *ngIf="detailsForm.get('email').hasError('required')" class="form-text text-danger">Email is required.</small>
+      <small *ngIf="detailsForm.get('email').hasError('email')" class="form-text text-danger">Email is invalid.</small>
+    </div>
+    <button type="submit" [disabled]="loader || detailsForm.invalid" class="btn joining">{{loader ? 'Joining' : 'Join Group'}}</button>
+  </form>
+
+</div>

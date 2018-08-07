@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyDetailsComponent } from './my-details/my-details.component';
 import { ChatComponent } from './chat/chat.component';
 import { RecordRtcComponent } from './record-rtc/record-rtc.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RecordRtcComponent } from './record-rtc/record-rtc.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [ChatService, PusherService],
   bootstrap: [AppComponent]

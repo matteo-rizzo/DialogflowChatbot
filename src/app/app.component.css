@@ -2,9 +2,22 @@
 
 @import url('../styles.css'); 
 
-.box-shadow { box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); }
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #3cba92;
+}
 
 nav {
-    color: white;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    color: #3cba92;
+    background-color: white;
+}
+
+.display-middle{
+    position: absolute;
+    top:20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
